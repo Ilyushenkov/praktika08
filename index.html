@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/praktika.css" rel="stylesheet">
+    <title>Учебная практика ПМ08</title>
+</head>
+<body class="bg-secondary">
+<!-- Дополнительный JavaScript; выберите один из двух! -->
+
+<!-- Вариант 1: Bootstrap в связке с Popper
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Вариант 2: Bootstrap JS отдельно от Popper
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<header>
+    <nav class="bg-info p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="image/pkgh.jpeg" alt="logo" id="logo"></a>
+
+            <h3 class="text-center text-white">Политехнический колледж городского хозяйства</h3>
+            <p class="text-center text-white">Учебная практика по модулю ПМ.08</p>
+            <p class="text-center text-white">Разработка дизайна веб-приложений</p>
+        </div>
+    </nav>
+</header>
+<main>
+    <h2 class="text-white text-center m-3">Содержание курса</h2>
+    <div class="accordion w-75 m-auto" id="accordion1">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                    Нормативная документация по практике
+                </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                <div class="accordion-body">
+                    <ul>
+                        <Li><a href="src/Дневник%20ИР_3.doc">Дневник по практике</a> </Li>
+                        <li><a href="src/Задание.docx">Задание на практику</a> </li>
+                        <li>Требования к оформлению отчета <a href="src/ГОСТ%2019.106-78.pdf">ГОСТ 19.106-78</a> </li>
+                    </ul>
+                    <h3 class="text-center">Общие требования к отчету</h3>
+                    <ul>
+                        <li class="p-1">Шрифт Times New Roman, размер 14пт</li>
+                        <li class="p-1">Абзацный отступ 1,5 см</li>
+                        <li class="p-1">Выравнивание по ширине страницы</li>
+                        <li class="p-1">Разделы отчета нумеруют, например<br>
+                            <i>1. Установка операционной системы Debian</i></li>
+                        <li class="p-1">Рисунков должно быть достаточно для понимания текста, на рисунок в тексте должна быть ссылка, например:
+                        <br><i class="p-1">Пример результата работы скрипта показан на рис. 1.</i></li>
+                        <li>При необходимости под рисунком помещают поясняющий текст, рисунки нумеруют. Из графического
+                            файла должны быть удалены неинформативные области (большие поля, элементы неотносящиеся к излагаемому тексту).
+                            Надписи на рисунке должны легко читаться при печате текста документа.
+                        <br><i>1 - Верхний колонтитул; 2 - Тело страницы; 3 - Нижний колонтитул <br>
+                                Рисунок 1 - Структура Вэб страницы</i></li>
+                        <li>Таблицы и страницы нумеруют</li>
+                        <li class="p-1">В документе должно быть "Содержание", <b> не оглавление</b></li>
+                        <li class="p-1">В конце документа должен быть "Список использованных источников"<br>
+                        <i>React - JavaScript-библиотека для создания пользовательских интерфейсов -
+                            https://ru.react.js.org/</i></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-center text-white m-3">Настройка сервера для Вэб разработки</h3>
+    <div class="accordion w-75 m-auto" id="accordion2">
+        <div class="accordion-item mb-1">
+            <h2 class="accordion-header" id="heading21">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
+                    Занятие 1 - Установка операционной системы Debian
+                </button>
+            </h2>
+            <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Официальная страница Debian - <a href="https://www.debian.org/">https://www.debian.org/</a></li>
+                        <li><a href="src/Установка%20Debian.pptx">Порядок работы</a></li>
+                    </ul>
+                    <h3>Содержание отчета</h3>
+                    <ul>
+                        <li>Назначение и характеристика операционной системы Debian</li>
+                        <li>Порядок установки операционной системы Debian</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading22">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                   Занятие 2 - Панель управления Hestia
+                </button>
+            </h2>
+            <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
+                <div class="accordion-body">
+                   <ul>
+                       <li> Страница панели управления Hestia <a href="https://www.hestiacp.com/">https://www.hestiacp.com/</a></li>
+                       <li><a href="src/Установка%20Hestia.pptx">Установка панели Hestia</a></li>
+                       <li><a href="src/ftp.pptx">Настройка FTP и SSH</a></li>
+                       <li><a href="https://disk.yandex.ru/d/zT0q_d6bP1iytQ">Конфигурационные файлы</a></li>
+                   </ul>
+                    <h3>Содержание отчета</h3>
+                    <ul>
+                        <li>Основные сведения и порядок настройки панели Hestia</li>
+                        <li>Основные сведения и порядок настройки FTP и SSH</li>
+                        <li>Проверка правильности работы SSH и FTP</li>
+                        <li>В панели управления Hestia создайте и опишите три пакета: эконом, стандарт и премиум. Создайте пользователя каждого пакета<br>
+                        Каждый пакет должен включать последние версии PHP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-white text-center m-3">Верстка в Bootstrap</h3>
+    <div class="accordion w-75 m-auto" id="accordion3">
+        <div class="accordion-item mb-1">
+            <h2 class="accordion-header" id="heading31">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse31" aria-expanded="true" aria-controls="collapse31">
+                    Занятие 3 - PhpStorm и GitHub
+                </button>
+            </h2>
+            <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion3">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Страница IDE PhpStorm - <a href="https://www.jetbrains.com/ru-ru/phpstorm/">https://www.jetbrains.com/ru-ru/phpstorm/</a></li>
+                        <li>Система контроля версий - <a href="https://github.com/">https://github.com/</a></li>
+                        <li>Bootstrap - <a href="https://bootstrap-4.ru/">https://bootstrap-4.ru/</a> </li>
+                        <li>Верстка проекта Bootstrap - <a href="https://github.com/Ilyushenkov/pets_front">https://github.com/Ilyushenkov/pets_front</a></li>
+                        <li>Страница проекта - <a href="https://ilyushenkov.github.io/pets_front/">https://ilyushenkov.github.io/pets_front/</a></li>
+                        <li>Порядок работы - <a href="src/Bootstrap.pptx">Скачать</a></li>
+                        <li>Описание проекта - <a href="src/Модуль%20В.pdf">Скачать</a></li>
+                    </ul>
+                    <h3>Содержание отчета</h3>
+                    <ul>
+                        <li>Разметка html страницы авторизации</li>
+                        <li>Внешний вид страницы авторизации</li>
+                        <li>Ссылка на репозиторий GitHub страницы авторизации</li>
+                        <li>Отчет по улучешению верстки проекта GET PET BACK</li>
+                        <li>Ссылка на репозиторий GitHub проекта GET PET BACK</li>
+                        <li>Ссылка на опубликованные для просмотра страницы</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
